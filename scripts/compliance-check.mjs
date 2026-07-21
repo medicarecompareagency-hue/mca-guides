@@ -68,6 +68,52 @@ for (const file of files) {
   if (/\{\{|TODO|FIXME|Lorem ipsum/i.test(body)) {
     errors.push(`${tag} unfilled placeholder or TODO left in body`);
   }
+
+  // ---- Fact-verification gate -------------------------------------------
+  // Articles publish automatically, so nothing downstream re-reads them.
+  // These rules exist because an unsourced dollar figure in Medicare
+  // marketing is the failure mode that actually hurts a reader.
+
+  // Any article stating dollar amounts must cite where they came from.
+  const hasDollarFigures = /\$[\d,]+(\.\d{2})?/.test(body);
+  const hasSourceLine = /^\*?Sources?:/mi.test(body) ||
+                        /\*Sources?:/i.test(body);
+  if (hasDollarFigures && !hasSourceLine) {
+    errors.push(`${tag} states dollar figures but has no Sources line - ` +
+      `every published figure needs a traceable primary source`);
+  }
+
+  // Sources must be primary. Secondary aggregators are fine as corroboration
+  // but cannot be the only thing standing behind a number.
+  if (hasDollarFigures && hasSourceLine) {
+    const primary = /(medicare\.gov|cms\.gov|ssa\.gov|irs\.gov|medicaid\.gov)/i;
+    if (!primary.test(body)) {
+      errors.push(`${tag} cites sources but none are primary ` +
+        `(medicare.gov, cms.gov, ssa.gov, irs.gov, medicaid.gov)`);
+    }
+  }
+
+  // Future-year figures are the highest-risk claim an automated writer can
+  // make, because CMS publishes them late and a plausible guess looks
+  // identical to a real number.
+  const thisYear = new Date().getFullYear();
+  const futureYear = new RegExp(`\\b(${thisYear + 1}|${thisYear + 2})\\b`);
+  if (futureYear.test(body) && /\$[\d,]+/.test(body)) {
+    const m = body.match(futureYear);
+    if (!new RegExp(`${m[0]}[^.]{0,400}(medicare\\.gov|cms\\.gov|ssa\\.gov)`, 'i').test(body)
+        && !new RegExp(`(medicare\\.gov|cms\\.gov|ssa\\.gov)[^.]{0,400}${m[0]}`, 'i').test(body)) {
+      warnings.push(`${tag} references ${m[0]} alongside dollar figures - ` +
+        `confirm CMS has actually published those numbers`);
+    }
+  }
+
+  // Hedging language signals the writer wasn't sure. Readers act on this
+  // content; "approximately $1,736" means somebody guessed.
+  const hedges = body.match(/\b(approximately|roughly|around|about)\s+\$[\d,]+/gi);
+  if (hedges) {
+    errors.push(`${tag} hedged dollar figure "${hedges[0]}" - ` +
+      `look up the exact number or remove the claim`);
+  }
 }
 
 if (warnings.length) {

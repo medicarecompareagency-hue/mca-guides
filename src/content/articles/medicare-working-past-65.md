@@ -47,8 +47,8 @@ works the same way.
 If you don't have qualifying coverage and delay, the penalty is **10% of
 the standard premium for each full 12-month period** you could have had Part
 B but didn't, and you pay it for as long as you have Part B. Someone who
-delayed 24 months would pay 20% above the 2026 standard premium of $202.90,
-or about $243.50 per month — permanently.
+delayed 24 months would pay 20% above the 2026 standard premium of $202.90 —
+an extra $40.58, for a total of $243.48 per month, permanently.
 
 ## A note on Health Savings Accounts
 
