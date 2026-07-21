@@ -5,6 +5,10 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://www.medicarecompareagency.com',
   base: '/guides',
+  // Astro's `base` only prefixes generated links - it does NOT nest the
+  // built files. Without this, Vercel serves the pages at the root and
+  // /guides 404s. outDir puts the files where `base` says they are.
+  outDir: './dist/guides',
 });
 
 // Subdomain fallback - swap the block above for this if the proxy isn't possible:

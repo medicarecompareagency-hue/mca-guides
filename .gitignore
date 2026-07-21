@@ -10,3 +10,5 @@ Thumbs.db
 # They disappear when the dev server stops; ignored so they can never
 # get committed by accident.
 .fuse_hidden*
+
+.vercel

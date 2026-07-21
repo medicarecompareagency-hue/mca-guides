@@ -14,6 +14,10 @@ https://www.medicarecompareagency.com/guides/
 https://www.medicarecompareagency.com/guides/medicare-changes-2026
 ```
 
+**The site is already built and live** at
+`https://mca-guides.vercel.app/guides` — you can look at it right now. It's
+a static site on Vercel; nothing needs to run on your server.
+
 **The question:** can the server in front of medicarecompareagency.com
 proxy that path to an external origin?
 
