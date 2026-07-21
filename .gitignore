@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.DS_Store
+Thumbs.db
+
+# Temp files left by editing tools over a mounted drive.
+# They disappear when the dev server stops; ignored so they can never
+# get committed by accident.
+.fuse_hidden*

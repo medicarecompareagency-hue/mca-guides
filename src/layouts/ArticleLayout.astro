@@ -1,0 +1,168 @@
+---
+const { title, description, publishDate, updatedDate, author, slug } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const fmt = (d) => new Date(d).toLocaleDateString('en-US',
+  { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/guides/favicon.svg" />
+
+  <!-- Per-article title and description. This is the thing the old /news
+       page could not do: every article now carries its own. -->
+  <title>{title} | Medicare Compare Agency</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    datePublished: new Date(publishDate).toISOString(),
+    dateModified: new Date(updatedDate || publishDate).toISOString(),
+    author: { '@type': 'Organization', name: author },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Medicare Compare Agency',
+      telephone: '+1-888-777-7986',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '2201 Providence Park, #150',
+        addressLocality: 'Birmingham',
+        addressRegion: 'AL',
+        postalCode: '35242',
+      },
+    },
+    mainEntityOfPage: canonical,
+  })} />
+
+  <style>
+    :root { --ink:#1c2b36; --muted:#5a6b78; --rule:#e3e8ec; --accent:#1a5f8a; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; color:var(--ink); background:#fff;
+      font:17px/1.7 Georgia, 'Times New Roman', serif;
+    }
+    .bar {
+      border-bottom:1px solid var(--rule); padding:14px 20px;
+      font-family:system-ui, sans-serif; font-size:14px;
+    }
+    .bar a { color:var(--accent); text-decoration:none; font-weight:600; }
+    main { max-width:720px; margin:0 auto; padding:44px 20px 72px; }
+    h1 { font-size:2.05rem; line-height:1.22; margin:0 0 12px; letter-spacing:-.01em; }
+    h2 { font-size:1.32rem; margin:2.3em 0 .6em; line-height:1.3; }
+    h3 { font-size:1.08rem; margin:1.9em 0 .5em; }
+    .meta {
+      font-family:system-ui, sans-serif; font-size:13px; color:var(--muted);
+      border-bottom:1px solid var(--rule); padding-bottom:18px; margin-bottom:32px;
+    }
+    a { color:var(--accent); }
+    table {
+      border-collapse:collapse; width:100%; margin:1.6em 0;
+      font-family:system-ui, sans-serif; font-size:14px; display:block;
+      overflow-x:auto; white-space:nowrap;
+    }
+    th, td { border:1px solid var(--rule); padding:9px 11px; text-align:left; }
+    th { background:#f6f8f9; font-weight:600; }
+    blockquote {
+      border-left:3px solid var(--rule); margin:1.5em 0; padding:.2em 0 .2em 1.1em;
+      color:var(--muted);
+    }
+    /* Benefit-figure grids. Built for readers on phones and for eyes
+       that don't love dense tables - each figure gets a label right next
+       to it instead of relying on a header row far away. */
+    .grid {
+      display:grid; gap:14px; margin:1.7em 0;
+      grid-template-columns:repeat(auto-fit, minmax(215px, 1fr));
+      font-family:system-ui, sans-serif;
+    }
+    .card {
+      border:1px solid var(--rule); border-radius:8px; padding:16px 17px;
+      background:#fff;
+    }
+    .card h4 {
+      margin:0 0 4px; font-size:15.5px; font-weight:700; color:var(--accent);
+      letter-spacing:.01em;
+    }
+    .card .sub {
+      margin:0 0 12px; font-size:12.5px; color:var(--muted); line-height:1.45;
+    }
+    .row {
+      display:flex; justify-content:space-between; align-items:baseline;
+      gap:12px; padding:7px 0; border-top:1px solid var(--rule);
+    }
+    .row:first-of-type { border-top:0; }
+    .row .k { font-size:13px; color:var(--muted); }
+    .row .v { font-size:15px; font-weight:600; white-space:nowrap; }
+    .row .v.none { color:#2c7a4b; }
+    .note {
+      font-family:system-ui, sans-serif; font-size:12.5px; color:var(--muted);
+      margin:-4px 0 1.8em; line-height:1.55;
+    }
+    .statehead {
+      font-family:system-ui, sans-serif; font-size:1.05rem; font-weight:700;
+      margin:2em 0 .1em; padding-bottom:7px; border-bottom:2px solid var(--accent);
+    }
+    @media (max-width:520px){ .grid{grid-template-columns:1fr;} }
+
+    .disclaimer {
+      margin-top:52px; padding-top:22px; border-top:1px solid var(--rule);
+      font-family:system-ui, sans-serif; font-size:12.5px;
+      line-height:1.6; color:var(--muted);
+    }
+    .contact {
+      margin-top:34px; padding:18px 20px; background:#f6f8f9;
+      border-radius:6px; font-family:system-ui, sans-serif; font-size:14.5px;
+    }
+    @media (max-width:600px){ main{padding:28px 18px 56px;} h1{font-size:1.6rem;} }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <a href="https://www.medicarecompareagency.com">&larr; Medicare Compare Agency</a>
+  </div>
+
+  <main>
+    <article>
+      <h1>{title}</h1>
+      <div class="meta">
+        Published {fmt(publishDate)}
+        {updatedDate && <span> &middot; Updated {fmt(updatedDate)}</span>}
+      </div>
+
+      <slot />
+
+      <div class="contact">
+        Questions about how this applies to your situation? Call
+        <strong>888-777-7986</strong> and one of our agents can walk you
+        through it.
+      </div>
+
+      <!-- Required TPMO disclaimer. Rendered from the layout so it cannot
+           be forgotten on an individual article. Wording matches what is
+           already live on medicarecompareagency.com - verify against the
+           current CMS marketing guidelines each plan year. -->
+      <div class="disclaimer">
+        <p>We do not offer every plan available in your area. Any information
+        we provide is limited to those plans we do offer in your area. Please
+        contact Medicare.gov or 1-800-MEDICARE to get information on all of
+        your options.</p>
+        <p>This content is for general educational purposes and is not a
+        complete description of benefits. Contact the plan for more
+        information. Medicare Compare Agency, 2201 Providence Park, #150,
+        Birmingham, Alabama 35242.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

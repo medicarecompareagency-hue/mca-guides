@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishDate - a.data.publishDate);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fmt = (d) => new Date(d).toLocaleDateString('en-US',
+  { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/guides/favicon.svg" />
+  <title>Medicare Guides &amp; Resources | Medicare Compare Agency</title>
+  <meta name="description" content="Plain-language guides to Medicare enrollment periods, costs, coverage, and savings programs, written by licensed agents in Birmingham, Alabama." />
+  <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
+  <style>
+    :root { --ink:#1c2b36; --muted:#5a6b78; --rule:#e3e8ec; --accent:#1a5f8a; }
+    body { margin:0; color:var(--ink); font:16px/1.65 system-ui, sans-serif; }
+    .bar { border-bottom:1px solid var(--rule); padding:14px 20px; font-size:14px; }
+    .bar a { color:var(--accent); text-decoration:none; font-weight:600; }
+    main { max-width:720px; margin:0 auto; padding:44px 20px 72px; }
+    h1 { font-size:2rem; margin:0 0 8px; letter-spacing:-.01em; }
+    .sub { color:var(--muted); margin:0 0 40px; }
+    li { list-style:none; padding:22px 0; border-bottom:1px solid var(--rule); }
+    ul { padding:0; margin:0; }
+    h2 { font-size:1.14rem; margin:0 0 6px; }
+    h2 a { color:var(--ink); text-decoration:none; }
+    h2 a:hover { color:var(--accent); }
+    .desc { color:var(--muted); font-size:14.5px; margin:0 0 6px; }
+    .date { color:var(--muted); font-size:12.5px; }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <a href="https://www.medicarecompareagency.com">&larr; Medicare Compare Agency</a>
+  </div>
+  <main>
+    <h1>Medicare Guides</h1>
+    <p class="sub">Plain-language answers from licensed agents. No sales pitch.</p>
+    <ul>
+      {articles.map((a) => (
+        <li>
+          <h2><a href={`${base}/${a.slug}`}>{a.data.title}</a></h2>
+          <p class="desc">{a.data.description}</p>
+          <span class="date">{fmt(a.data.publishDate)}</span>
+        </li>
+      ))}
+    </ul>
+  </main>
+</body>
+</html>
