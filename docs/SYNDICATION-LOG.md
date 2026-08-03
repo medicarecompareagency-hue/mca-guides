@@ -51,4 +51,16 @@ as it resolves, so this only affects posts made in the meantime.
 
 | Article slug | Syndicated | Medium URL |
 |---|---|---|
-| | | |
+| should-i-switch-medicare-plans | 2026-08-03 | _pending — Dale to fill in after publishing_ |
+
+**Canonical used:** `https://mca-guides.vercel.app/guides/should-i-switch-medicare-plans`
+(Vercel, not production — see "Pending domain change" above. Needs updating in
+Medium once the domain move lands.)
+
+**Note on the production domain (2026-08-03):** `medicarecompareagency.com/guides`
+no longer 404s — it now **301-redirects to `mca-guides.vercel.app`**. So the
+"does production serve yet" check is no longer a clean yes/no. The content still
+physically lives on Vercel, so the canonical stays Vercel for now. The redirect
+is pointing the *wrong way* for the end state Dale wants: production should serve
+the content and Vercel should redirect to production, not the reverse. Worth
+raising with the webmaster.
