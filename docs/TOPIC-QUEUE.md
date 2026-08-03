@@ -26,9 +26,9 @@ year-round and don't care when they publish.
 
 | # | Title | Target keyword | Type | Published |
 |---|---|---|---|---|
-| 1 | What Changes During Medicare Open Enrollment 2027 | medicare open enrollment 2027 | Seasonal | |
-| 2 | Should I Switch Medicare Plans This Year? | should i switch medicare plans | Seasonal | |
-| 3 | How to Compare Medicare Advantage Plans Before AEP | compare medicare advantage plans | Seasonal | |
+| 1 | What Changes During Medicare Open Enrollment 2027 | medicare open enrollment 2027 | Seasonal | 2026-07-21 |
+| 2 | Should I Switch Medicare Plans This Year? | should i switch medicare plans | Seasonal | 2026-07-27 |
+| 3 | How to Compare Medicare Advantage Plans Before AEP | compare medicare advantage plans | Seasonal | 2026-08-03 |
 | 4 | What Is an Annual Notice of Change (ANOC)? | annual notice of change medicare | Seasonal | |
 | 5 | Your Medicare Plan Is Leaving Your Area — What Now? | medicare plan discontinued | Seasonal | |
 | 6 | Will My Doctor Still Take My Plan Next Year? | is my doctor in my medicare network | High intent | |
