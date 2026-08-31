@@ -32,7 +32,7 @@ year-round and don't care when they publish.
 | 4 | What Is an Annual Notice of Change (ANOC)? | annual notice of change medicare | Seasonal | 2026-08-12 |
 | 5 | Your Medicare Plan Is Leaving Your Area — What Now? | medicare plan discontinued | Seasonal | 2026-08-17 |
 | 6 | Will My Doctor Still Take My Plan Next Year? | is my doctor in my medicare network | High intent | 2026-08-27 |
-| 7 | What Happens If I Miss the December 7 Deadline? | missed medicare deadline | Seasonal | |
+| 7 | What Happens If I Miss the December 7 Deadline? | missed medicare deadline | Seasonal | 2026-08-31 |
 | 8 | Medicare Advantage vs Original Medicare: Which Costs Less? | medicare advantage vs original medicare | High intent | |
 | 9 | Does Medicare Cover Dental, Vision, and Hearing? | does medicare cover dental | High intent | |
 | 10 | What Is a Medicare Special Needs Plan (SNP)? | medicare special needs plan | High intent | |
