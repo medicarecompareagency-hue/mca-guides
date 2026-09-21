@@ -33,8 +33,8 @@ year-round and don't care when they publish.
 | 5 | Your Medicare Plan Is Leaving Your Area — What Now? | medicare plan discontinued | Seasonal | 2026-08-17 |
 | 6 | Will My Doctor Still Take My Plan Next Year? | is my doctor in my medicare network | High intent | 2026-08-27 |
 | 7 | What Happens If I Miss the December 7 Deadline? | missed medicare deadline | Seasonal | 2026-08-31 |
-| 8 | Medicare Advantage vs Original Medicare: Which Costs Less? | medicare advantage vs original medicare | High intent | |
-| 9 | Does Medicare Cover Dental, Vision, and Hearing? | does medicare cover dental | High intent | |
+| 8 | Medicare Advantage vs Original Medicare: Which Costs Less? | medicare advantage vs original medicare | High intent | 2026-09-08 |
+| 9 | Does Medicare Cover Dental, Vision, and Hearing? | does medicare cover dental | High intent | 2026-09-21 |
 | 10 | What Is a Medicare Special Needs Plan (SNP)? | medicare special needs plan | High intent | |
 | 11 | Do I Need a Medigap Plan If I Have Medicare Advantage? | medigap with medicare advantage | High intent | |
 | 12 | What Is the Medicare Part B Give Back Benefit? | part b give back benefit | High intent | |
