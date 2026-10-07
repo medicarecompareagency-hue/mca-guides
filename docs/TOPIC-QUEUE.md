@@ -36,7 +36,7 @@ year-round and don't care when they publish.
 | 8 | Medicare Advantage vs Original Medicare: Which Costs Less? | medicare advantage vs original medicare | High intent | 2026-09-08 |
 | 9 | Does Medicare Cover Dental, Vision, and Hearing? | does medicare cover dental | High intent | 2026-09-21 |
 | 10 | What Is a Medicare Special Needs Plan (SNP)? | medicare special needs plan | High intent |  2026-10-05 |
-| 11 | Do I Need a Medigap Plan If I Have Medicare Advantage? | medigap with medicare advantage | High intent | |
+| 11 | Do I Need a Medigap Plan If I Have Medicare Advantage? | medigap with medicare advantage | High intent |  2026-10-07 |
 | 12 | What Is the Medicare Part B Give Back Benefit? | part b give back benefit | High intent | |
 | 13 | How Much Does Medicare Cost If I Have a High Income? | medicare irmaa 2027 | High intent | |
 | 14 | Can I Have Medicare and Medicaid at the Same Time? | dual eligible medicare medicaid | High intent | |
