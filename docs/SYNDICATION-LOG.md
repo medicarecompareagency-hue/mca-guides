@@ -226,3 +226,7 @@ the five unpublished articles go live on the site.
 ---
 
 **Re-checked 2026-09-29:** `/guides` index still lists only **8** articles, all already syndicated. Six unsyndicated articles in the repo are not live (direct URLs return HTTP 500): `annual-notice-of-change-medicare`, `medicare-plan-discontinued`, `is-my-doctor-in-my-medicare-network`, `missed-medicare-deadline`, `medicare-advantage-vs-original-medicare`, `does-medicare-cover-dental-vision-hearing` (09-21, now 8 days old). Nothing syndicated this run. **Dale: the publish step to medicarecompareagency.com is still broken.**
+
+---
+
+**Re-checked 2026-10-05:** `/guides` index still lists only **8** articles, all already syndicated. Six unsyndicated articles in the repo (annual-notice-of-change-medicare, medicare-plan-discontinued, is-my-doctor-in-my-medicare-network, missed-medicare-deadline, medicare-advantage-vs-original-medicare, does-medicare-cover-dental-vision-hearing) still return HTTP 500 on the live site. Nothing syndicated this run. **Dale: the publish step to medicarecompareagency.com is still broken.**
