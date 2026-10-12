@@ -230,3 +230,7 @@ the five unpublished articles go live on the site.
 ---
 
 **Re-checked 2026-10-05:** `/guides` index still lists only **8** articles, all already syndicated. Six unsyndicated articles in the repo (annual-notice-of-change-medicare, medicare-plan-discontinued, is-my-doctor-in-my-medicare-network, missed-medicare-deadline, medicare-advantage-vs-original-medicare, does-medicare-cover-dental-vision-hearing) still return HTTP 500 on the live site. Nothing syndicated this run. **Dale: the publish step to medicarecompareagency.com is still broken.**
+
+---
+
+**2026-10-12 run:** Site fetch blocked (robots.txt, ROBOTS_DISALLOWED), so liveness could NOT be verified. Prepared draft `medium/medium-2026-10-12-medicare-special-needs-plan.md` (newest eligible, published 10-05) with canonical `https://medicarecompareagency.com/guides/medicare-special-needs-plan`. **Not logged as syndicated** — Dale must confirm the URL loads before importing. Add the row to the table once it's published.
