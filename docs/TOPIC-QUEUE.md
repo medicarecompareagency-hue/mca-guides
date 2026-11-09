@@ -22,6 +22,27 @@ year-round and don't care when they publish.
 
 ---
 
+## Backup drafts (use when the next topic is blocked)
+
+If the first row with an empty Published column is blocked (for example #13
+waiting on CMS's 2027 figures), do NOT stop. Publish the next backup draft
+below instead, then leave the blocked row empty so it's retried next week.
+
+To publish a backup: in its file set `draft: false` (or remove the line), set
+`publishDate` to today, re-verify every figure against the sources in its
+Sources line, run `npm run check` and `npm run build`, then put today's date
+in its Published column (replacing "Backup draft ready").
+
+| Order | File | Queue # | Status |
+|---|---|---|---|
+| 1 | src/content/articles/does-medicare-cover-home-health-care.md | 19 | Ready (verified 2026-11-09) |
+| 2 | src/content/articles/medicare-diabetes-coverage.md | 17 | Ready (verified 2026-11-09) |
+
+Blocked stubs live in `docs/blocked/`, not in `src/content/articles/` - a stub
+there fails `npm run check` and blocks every deploy.
+
+---
+
 ## Queue
 
 | # | Title | Target keyword | Type | Published |
@@ -38,13 +59,13 @@ year-round and don't care when they publish.
 | 10 | What Is a Medicare Special Needs Plan (SNP)? | medicare special needs plan | High intent |  2026-10-05 |
 | 11 | Do I Need a Medigap Plan If I Have Medicare Advantage? | medigap with medicare advantage | High intent |  2026-10-07 |
 | 12 | What Is the Medicare Part B Give Back Benefit? | part b give back benefit | High intent | 2026-10-12 |
+| 14 | Can I Have Medicare and Medicaid at the Same Time? | dual eligible medicare medicaid | High intent | 2026-11-09 |
 | 13 | How Much Does Medicare Cost If I Have a High Income? | medicare irmaa 2027 | High intent | |
-| 14 | Can I Have Medicare and Medicaid at the Same Time? | dual eligible medicare medicaid | High intent | |
 | 15 | Extra Help and MSP Limits: Tennessee | tennessee medicare savings program | State table | |
 | 16 | Extra Help and MSP Limits: Texas | texas medicare savings program | State table | |
-| 17 | What Does Medicare Cover for Diabetes? | medicare diabetes coverage | High intent | |
+| 17 | What Does Medicare Cover for Diabetes? | medicare diabetes coverage | High intent | Backup draft ready |
 | 18 | Medicare Coverage for Hospital Stays: What You Actually Pay | medicare hospital costs | High intent | |
-| 19 | Does Medicare Cover Home Health Care? | does medicare cover home health | High intent | |
+| 19 | Does Medicare Cover Home Health Care? | does medicare cover home health | High intent | Backup draft ready |
 | 20 | What Is the Medicare Part D Donut Hole in 2027? | medicare donut hole 2027 | High intent | |
 | 21 | Extra Help and MSP Limits: Kentucky | kentucky medicare savings program | State table | |
 | 22 | Extra Help and MSP Limits: South Carolina | south carolina medicare savings program | State table | |
