@@ -234,3 +234,11 @@ the five unpublished articles go live on the site.
 ---
 
 **2026-10-12 run:** Site fetch blocked (robots.txt, ROBOTS_DISALLOWED), so liveness could NOT be verified. Prepared draft `medium/medium-2026-10-12-medicare-special-needs-plan.md` (newest eligible, published 10-05) with canonical `https://medicarecompareagency.com/guides/medicare-special-needs-plan`. **Not logged as syndicated** — Dale must confirm the URL loads before importing. Add the row to the table once it's published.
+
+---
+
+**2026-10-19 run:** Site fetch blocked (robots.txt, ROBOTS_DISALLOWED), so liveness could NOT be verified. Prepared draft `medium/medium-2026-10-19-part-b-give-back-benefit.md` (newest eligible, published 10-12) with canonical `https://medicarecompareagency.com/guides/part-b-give-back-benefit`. **Not logged as syndicated** until Dale confirms the URL loads and imports it. Also still pending from 10-12: `medicare-special-needs-plan` draft. One wording change: heading "Treating it as free money" -> "Treating it as a sure thing" (avoids the word "free"). No figures changed.
+
+---
+
+**2026-11-02 run:** Could not verify liveness. Production URL returned 404 via direct check and fetch tools failed on both production and mca-guides.vercel.app. Newest eligible article is `part-b-give-back-benefit` (10-12); draft already exists at `medium/medium-2026-10-19-part-b-give-back-benefit.md`. Not logged as syndicated. Unsyndicated drafts/articles pending: medicare-special-needs-plan, part-b-give-back-benefit, medigap-with-medicare-advantage (10-07). Dale: confirm the URLs load, then import.
