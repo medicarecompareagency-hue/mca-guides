@@ -5,7 +5,6 @@ publishDate: 2026-11-16
 targetKeyword: "does medicare cover home health"
 reviewedForCompliance: true
 complianceReviewedBy: "Automated verification pass"
-draft: true
 ---
 
 Yes, but probably not in the way most families hope. Medicare covers part-time, skilled care at home, such as nursing visits and physical therapy, for people who are homebound and whose doctor orders it. It does not cover someone to stay with you around the clock, and it doesn't pay for help with bathing, dressing, or housework when that's the only help you need.
@@ -69,7 +68,7 @@ Before care starts, the agency should tell you how much Medicare will pay. If th
 
 ## If you have a Medicare Advantage plan
 
-Medicare Advantage plans have to cover the same home health services Original Medicare covers, but the plan sets its own rules for which agencies you can use and whether you need approval first. Call the plan before care begins and ask which home health agencies are in its network.
+Medicare.gov says Medicare Advantage plans must cover all medically necessary services that Original Medicare covers, and that includes home health care. But you may need to use agencies in the plan's network, and you may need approval from the plan (prior authorization) before care starts. Call the plan before care begins and ask which home health agencies are in its network.
 
 ## Common mistakes
 
@@ -83,6 +82,6 @@ Medicare Advantage plans have to cover the same home health services Original Me
 
 ## Where to get help
 
-You can search for Medicare-certified home health agencies on Medicare.gov's Care Compare tool, or call 1-800-MEDICARE. Your State Health Insurance Assistance Program (SHIP) gives free counseling if you have questions about your coverage.
+Your provider should give you a list of agencies that serve your area, and Medicare.gov says the provider must tell you if they have a financial interest in any agency on that list. You can also look up and compare Medicare-certified home health agencies yourself on Medicare.gov's Care Compare tool, or call 1-800-MEDICARE. If you have a Medigap policy or other insurance, tell the agency so your bills get paid correctly. Your State Health Insurance Assistance Program (SHIP) gives free counseling if you have questions about your coverage.
 
-*Sources: Medicare.gov, "Home health services" (medicare.gov/coverage/home-health-services).*
+*Sources: Medicare.gov, "Home health services" (https://www.medicare.gov/coverage/home-health-services); Medicare.gov, "Compare Original Medicare & Medicare Advantage" (https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/your-coverage-options/compare-original-medicare-medicare-advantage).*

@@ -59,6 +59,7 @@ Story settings → Advanced settings → change the canonical link to
 | four-parts-of-medicare-2026 | 2026-09-08 | _pending — Dale to fill in after publishing_ |
 | medicare-changes-2026 | 2026-09-14 | _pending — Dale to fill in after publishing_ |
 | medicare-working-past-65 | 2026-09-21 | _pending — Dale to fill in after publishing_ |
+| dual-eligible-medicare-medicaid | 2026-11-16 | _pending — Dale to fill in after publishing_ |
 
 **Canonical used (2026-08-03 run):** `https://mca-guides.vercel.app/guides/should-i-switch-medicare-plans`
 — Vercel, because production wasn't serving yet. **Needs updating in Medium**
@@ -246,3 +247,9 @@ the five unpublished articles go live on the site.
 ---
 
 **2026-11-09 run:** Newest eligible article is `part-b-give-back-benefit` (10-12). Its URL returns HTTP 404 on www.medicarecompareagency.com, medicarecompareagency.com, AND mca-guides.vercel.app (checked by curl). Nothing live to point a canonical at, so nothing new prepared or logged as syndicated. Existing drafts in `medium/` (special-needs-plan, part-b-give-back-benefit) still wait on Dale. Other pending: medigap-with-medicare-advantage (10-07). `medicare-irmaa-2027` is draft.
+
+---
+
+**2026-11-16 run:** Sent `dual-eligible-medicare-medicaid` (published 11-09, exactly 7 days). Production URL verified live: `https://www.medicarecompareagency.com/guides/dual-eligible-medicare-medicaid` returns 200 with the article body (a bogus slug returns 404; trailing slash 301s to no-slash). Note: plain curl without browser headers gets HTTP 406, which likely explains the earlier "can't verify" runs. Canonical used: `https://www.medicarecompareagency.com/guides/dual-eligible-medicare-medicaid`. Draft: `medium/medium-2026-11-16-dual-eligible-medicare-medicaid.md`. MSP card text converted to one table; trimmed to ~950 words; "free, unbiased help" -> "unbiased help". No figures changed.
+
+Also now verified live on production (same check): `medicare-special-needs-plan`, `part-b-give-back-benefit`, `medigap-with-medicare-advantage` — so the 10-12 and 10-19 drafts in `medium/` are safe to import.
