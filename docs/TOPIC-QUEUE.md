@@ -35,7 +35,7 @@ in its Published column (replacing "Backup draft ready").
 
 | Order | File | Queue # | Status |
 |---|---|---|---|
-| 1 | src/content/articles/does-medicare-cover-home-health-care.md | 19 | Ready (verified 2026-11-09) |
+| 1 | src/content/articles/does-medicare-cover-home-health-care.md | 19 | Used 2026-11-16 (re-verified, published) |
 | 2 | src/content/articles/medicare-diabetes-coverage.md | 17 | Ready (verified 2026-11-09) |
 
 Blocked stubs live in `docs/blocked/`, not in `src/content/articles/` - a stub
@@ -65,7 +65,7 @@ there fails `npm run check` and blocks every deploy.
 | 16 | Extra Help and MSP Limits: Texas | texas medicare savings program | State table | |
 | 17 | What Does Medicare Cover for Diabetes? | medicare diabetes coverage | High intent | Backup draft ready |
 | 18 | Medicare Coverage for Hospital Stays: What You Actually Pay | medicare hospital costs | High intent | |
-| 19 | Does Medicare Cover Home Health Care? | does medicare cover home health | High intent | Backup draft ready |
+| 19 | Does Medicare Cover Home Health Care? | does medicare cover home health | High intent | 2026-11-16 |
 | 20 | What Is the Medicare Part D Donut Hole in 2027? | medicare donut hole 2027 | High intent | |
 | 21 | Extra Help and MSP Limits: Kentucky | kentucky medicare savings program | State table | |
 | 22 | Extra Help and MSP Limits: South Carolina | south carolina medicare savings program | State table | |
