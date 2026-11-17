@@ -13,3 +13,5 @@ DRAFT STUB - BLOCKED. The 2027 Part B premium, deductible, and IRMAA income brac
 Re-checked again 2026-11-09 (later run): medicare.gov still shows 2026 figures only; no 2027 Part B/IRMAA announcement on cms.gov.
 
 Re-checked 2026-11-16: medicare.gov/basics/costs/medicare-costs still shows 2026 figures; no 2027 Part A/B premium announcement found on cms.gov. Published backup (home health care) instead.
+
+Re-checked 2026-11-17: medicare.gov/basics/costs/medicare-costs still shows 2026 figures ($202.90 / $283); no 2027 Part A/B premium fact sheet on cms.gov (only the Oct 2026 high-deductible Medigap figure, $3,050). Published backup (diabetes coverage) instead. No Ready backups remain.

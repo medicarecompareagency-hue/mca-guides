@@ -1,11 +1,10 @@
 ---
 title: "What Does Medicare Cover for Diabetes?"
 description: "Medicare covers diabetes testing supplies, CGMs, insulin, screenings, training, and therapeutic shoes. Here's what each part covers and what you pay."
-publishDate: 2026-11-23
+publishDate: 2026-11-17
 targetKeyword: "medicare diabetes coverage"
 reviewedForCompliance: true
 complianceReviewedBy: "Automated verification pass"
-draft: true
 ---
 
 Medicare covers most of what people with diabetes need: blood sugar testing supplies, continuous glucose monitors for many people, insulin, screenings, training, and even special shoes. Covered insulin costs no more than $35 for a one-month supply, according to Medicare.gov.
@@ -40,7 +39,7 @@ This is where most of the confusion lives.
 
 **If you use a disposable "patch" pump,** Part B doesn't cover it either. A drug plan may. Medicare.gov warns that patch pumps may cost more than $35 because they fall outside the $35 limit.
 
-Under all three ways of getting covered insulin, Medicare.gov says you pay no more than $35 for a one-month supply and no deductible for the insulin itself. If you get Extra Help, you pay less than $35 (Medicare.gov).
+Under all three ways of getting covered insulin, Medicare.gov says you pay no more than $35 for a one-month supply and no deductible for the insulin itself. If you fill a 2- or 3-month supply, the $35 limit applies to each month, so a 2-month fill costs no more than $70. If you get Extra Help, you pay less than $35 (Medicare.gov).
 
 One gap people hit: Part B doesn't cover insulin syringes, needles, or other insulin supplies. Part D plans may cover them.
 
@@ -60,7 +59,7 @@ One gap people hit: Part B doesn't cover insulin syringes, needles, or other ins
 
 **Foot exams.** If you have diabetes-related nerve damage in your lower legs that raises your risk of losing a limb, Medicare covers a foot exam every 6 months by a podiatrist or foot care specialist. You pay 20% after the Part B deductible (Medicare.gov).
 
-**Therapeutic shoes.** If you have a qualifying foot condition, Medicare covers one pair of depth shoes and 3 pairs of inserts, or one pair of custom-molded shoes and 2 extra pairs of inserts, each calendar year. You need a prescription and a fitting by a qualified provider (CMS).
+**Therapeutic shoes.** If you have a qualifying foot condition, Medicare covers one pair of depth shoes and 3 pairs of inserts, or one pair of custom-molded shoes and 2 extra pairs of inserts, each calendar year. You need a prescription and a fitting by a qualified provider, and you pay 20% after the Part B deductible (CMS; Medicare.gov).
 
 **Glaucoma tests.** Diabetes puts you in the high-risk group, so Medicare covers a glaucoma test once every 12 months, done or supervised by a licensed eye doctor. You pay 20% after the Part B deductible (Medicare.gov).
 
