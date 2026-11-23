@@ -60,6 +60,7 @@ Story settings → Advanced settings → change the canonical link to
 | medicare-changes-2026 | 2026-09-14 | _pending — Dale to fill in after publishing_ |
 | medicare-working-past-65 | 2026-09-21 | _pending — Dale to fill in after publishing_ |
 | dual-eligible-medicare-medicaid | 2026-11-16 | _pending — Dale to fill in after publishing_ |
+| does-medicare-cover-home-health-care | 2026-11-23 | _pending — Dale to fill in after publishing_ |
 
 **Canonical used (2026-08-03 run):** `https://mca-guides.vercel.app/guides/should-i-switch-medicare-plans`
 — Vercel, because production wasn't serving yet. **Needs updating in Medium**
@@ -253,3 +254,7 @@ the five unpublished articles go live on the site.
 **2026-11-16 run:** Sent `dual-eligible-medicare-medicaid` (published 11-09, exactly 7 days). Production URL verified live: `https://www.medicarecompareagency.com/guides/dual-eligible-medicare-medicaid` returns 200 with the article body (a bogus slug returns 404; trailing slash 301s to no-slash). Note: plain curl without browser headers gets HTTP 406, which likely explains the earlier "can't verify" runs. Canonical used: `https://www.medicarecompareagency.com/guides/dual-eligible-medicare-medicaid`. Draft: `medium/medium-2026-11-16-dual-eligible-medicare-medicaid.md`. MSP card text converted to one table; trimmed to ~950 words; "free, unbiased help" -> "unbiased help". No figures changed.
 
 Also now verified live on production (same check): `medicare-special-needs-plan`, `part-b-give-back-benefit`, `medigap-with-medicare-advantage` — so the 10-12 and 10-19 drafts in `medium/` are safe to import.
+
+---
+
+**2026-11-23 run:** Sent `does-medicare-cover-home-health-care` (published 11-16, exactly 7 days; newest eligible). Production URL verified live (HTTP 200 with article body; bogus slug 404s). Canonical used: `https://www.medicarecompareagency.com/guides/does-medicare-cover-home-health-care`. Draft: `medium/medium-2026-11-23-does-medicare-cover-home-health-care.md`. No HTML grids; ~930 words, sent as-is. One wording change: SHIP "gives free counseling" -> "offers one-on-one counseling". No figures changed.
