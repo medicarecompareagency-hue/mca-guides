@@ -61,7 +61,7 @@ there fails `npm run check` and blocks every deploy.
 | 12 | What Is the Medicare Part B Give Back Benefit? | part b give back benefit | High intent | 2026-10-12 |
 | 14 | Can I Have Medicare and Medicaid at the Same Time? | dual eligible medicare medicaid | High intent | 2026-11-09 |
 | 13 | How Much Does Medicare Cost If I Have a High Income? | medicare irmaa 2027 | High intent | 2026-11-23 |
-| 15 | Extra Help and MSP Limits: Tennessee | tennessee medicare savings program | State table | |
+| 15 | Extra Help and MSP Limits: Tennessee | tennessee medicare savings program | State table | 2026-11-23 |
 | 16 | Extra Help and MSP Limits: Texas | texas medicare savings program | State table | |
 | 17 | What Does Medicare Cover for Diabetes? | medicare diabetes coverage | High intent | 2026-11-17 |
 | 18 | Medicare Coverage for Hospital Stays: What You Actually Pay | medicare hospital costs | High intent | |
